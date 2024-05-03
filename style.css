@@ -9,56 +9,62 @@
         }
         .container {
             display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 70px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
             max-width: 900px;
-            margin: 150px auto;
-            min-height: 60vh;
+            margin: 50px auto;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
         }
         .cont {
-            margin: 10px;
-            width: 30%;
+            margin: 20px;
+            width: calc(33.33% - 40px);
+            text-align: center;
         }
         .cont h2 {
             font-family: 'Merriweather', serif;
-            font-size: 26px;
+            font-size: 2em;
             font-weight: bold;
+            margin-bottom: 10px;
         }
-        .cont button {
-            margin-top: 20px;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 7px;
-        }
-        .dols {
+        .cont .dols {
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 36px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
-        .para1 {
+
+            .cont .number {
             font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 16px;
-        }
-        .para2 {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 20px;
-        }
-        .dols span {
             font-size: 62px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .cont .para1 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .cont .para2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cont button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+            font-size: 1em;
+            cursor: pointer;
         }
         @media screen and (max-width: 830px) {
             .container {
                 flex-direction: column;
-                gap: 0px;
-                margin: 20px;
-                min-height: 100vh;
+                align-items: center;
             }
             .cont {
-                width: 100%;
+                width: 80%;
             }
         }
