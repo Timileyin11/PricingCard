@@ -1,7 +1,10 @@
-* {
+*          {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(rgba(128, 0, 128, 0.062), rgba(135, 207, 235, 0.295), rgba(255, 255, 0, 0.219));
 }
 .container {
   display: flex;
@@ -9,34 +12,55 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 70px;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 150px auto;
-  height: 50vh;
-  background-color: #eee;
+  height: 60vh;
+  background-color: white;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
 .cont {
   margin: 10px;
   width: 30%;
 }
+.cont h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 26px;
+  font-weight: bold;
+}
 .cont button {
   margin-top: 20px;
   padding: 15px 30px;
   border: none;
+  border-radius: 7px;
 }
 .dols {
-  font-weight: 900;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+.para1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  
+}
+.para2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  
 }
 .dols span {
-  font-size: 30px;
+  font-size: 62px;
 }
 @media screen and (max-width: 830px) {
   .container {
-    flex-direction: column;
-    gap: 0px;
-    margin: 20px;
-    height: 100vh;
+      flex-direction: column;
+      gap: 0px;
+      margin: 20px;
+      height: 100vh;
   }
-  .cont{
-    width: 100%;
+  .cont {
+      width: 100%;
   }
 }
