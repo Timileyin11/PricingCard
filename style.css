@@ -35,6 +35,13 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
+
+            .cont .number {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 62px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
         .cont .para1 {
             font-family: 'IBM Plex Sans', sans-serif;
             font-size: 1em;
